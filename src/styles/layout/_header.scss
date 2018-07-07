@@ -1,0 +1,62 @@
+.header {
+
+    .header__container {
+        min-height: 70px;
+        padding: 20px 0;
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.header__nav {
+
+    .nav__list {
+        display: flex;
+        list-style: none;
+
+        .nav__item {
+            margin-right: 25px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+
+    .contacts__phone {
+        color: #8a3151;
+        font-size: 25px;
+    }
+
+    .contacts__btn {
+        border: none;
+        border-bottom: #bc8899 5px solid;
+        font-size: 16px;
+        background: none;
+    }
+}
+
+.header__order {
+    display: flex;
+
+    .order__contact {
+        color: black;
+        border-bottom: #bc8899 5px solid; 
+        margin-right: 20px;       
+    }
+
+    .order__btn {
+        color: #8a3151;
+        background: none;
+        border: none;
+    }
+}

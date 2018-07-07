@@ -4,4 +4,11 @@ $(document).ready(() => {
         $('.header__list').toggleClass('header__list--active');
         console.log('click');
     });
+
+    $(function(){
+        $('.hero__slider').bxSlider({
+          mode: 'fade',
+          captions: true
+        });
+      });
 });

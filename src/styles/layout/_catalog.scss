@@ -1,0 +1,134 @@
+.catalog {
+
+    .catalog__container {
+        max-width: 1170px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.catalog__title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.catalog__menu {
+    background-color: #ffe1ab;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 740px;
+        list-style: none;
+        padding: 30px 0;
+    }
+
+    .menu__item {
+        margin-right: 20px;
+        border-bottom: 1px dotted #8a3151;
+        margin-bottom: 15px;
+
+        .menu__link {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                color: #8a3151;
+            }
+        }
+
+        &:hover {
+            border-bottom: 1px solid #8a3151;
+        }
+    }
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .products__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ffcc6f;
+        text-align: center;     
+        margin-right: 10px;
+        margin-bottom: 20px;
+
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+        
+        .products__img {
+            width: 270px;
+            height: 180px;
+        }
+
+        .products__title {
+            font-size: 23px;
+        }
+
+        .products__weight {
+            font-weight: 600;
+        }
+
+        .products__type {
+            font-weight: 400;
+        }
+
+        .products__text {
+            color: #a0a0a0;
+            max-width: 170px;
+        }
+
+        .products__price {
+            color: #8a3151;
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+        .products__old-price {
+            font-size: 15px;
+            color: #a7a7a7;
+            font-size: 15px;
+        }
+    }
+}
+
+.pagination__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+    .pagination__item {
+        padding: 10px;
+        border: 1px solid #ffcc6f;
+        margin-right: 20px;
+
+        .pagination__link {
+            color: #a0a0a0;
+            font-size: 20px;
+
+            &:hover {
+                color: #8a3151;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .pagination__item--arrow {
+        border: none;
+    }
+}
