@@ -1,5 +1,7 @@
 .sale {
+    width: 100wv;
     background: url(../../assets/images/bg-last.png) center center no-repeat;
+    background-size: cover; 
     min-height: 421px;
 
     .sale__container {
@@ -22,10 +24,17 @@
     background-color: #ffe1ab;
     max-width: 600px;
     padding: 40px;
+    text-align: center;
 
     .sale__title {
+        max-width: 500px;
+        align-items: center;
         font-size: 40px;
         font-weight: 700;
+    }
+
+    .sale__text {
+        max-width: 400px;
     }
 
     .sale__price {
@@ -37,5 +46,6 @@
         height: 52px;
         width: 165px;
         border: none;
+        color: white;
     }
 }

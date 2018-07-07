@@ -6,12 +6,12 @@
     justify-content: center;
 
     .footer__container {
-        max-width: 1170px;
+        width: 1170px;
         height: 100%;
         margin: 0 auto;
         padding-top: 113px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         color: white;
     }
