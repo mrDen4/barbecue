@@ -8,6 +8,23 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        position: relative;
+
+        @include tablets() {
+            flex-direction: column;
+        }
+    }
+}
+
+.header__humburger {
+    position: absolute;
+    display: none;
+    font-size: 25px;
+    left: 10px;
+    color: #8a3151;
+
+    @include tablets() {
+        display: initial;
     }
 }
 
@@ -19,6 +36,11 @@
 
         .nav__item {
             margin-right: 25px;
+
+            @include tablets() {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
         }
 
         a {
@@ -30,7 +52,19 @@
                 color: #8a3151;
             }
         }
+
+        @include tablets() {
+            flex-direction: column;
+        }
     }
+
+    @include tablets() {
+        display: none;
+    }
+}
+
+.header__nav--active {
+    display: flex;
 }
 
 .header__contacts {

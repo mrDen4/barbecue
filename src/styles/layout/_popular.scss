@@ -8,6 +8,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
+
+        @include tablets() {
+            padding: 0 20px;
+        }
     }
 
     .popular__title {
@@ -17,10 +22,41 @@
     }
 }
 
+.popular__prev {
+    background: url('../images/arrow/left.png') center center no-repeat;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    left: -40px;
+    top: 350px;
+
+    @include tablets() {
+        left: 5px;
+    }
+}
+
+.popular__next {
+    background: url('../images/arrow/right.png') center center no-repeat;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 350px;
+    right: -40px;
+
+    @include tablets() {
+        right: 5px;
+    }
+}
+
 .popular__list {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+
+    @include tablets() {
+        width: 300px;
+    }
 
     .popular__item {
         display: flex;
@@ -28,10 +64,12 @@
         align-items: center;
         border: 1px solid #ffcc6f;
         text-align: center;
+        margin-right: 10px;
 
         .popular__img {
-            width: 280px;
+            width: 268px;
             height: 180px;
+            z-index: 999;
         }
 
         .popular__subtitle {

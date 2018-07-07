@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./assets/styles/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./assets/styles/bootstrap/bootstrap-reboot.css">
     <link rel="stylesheet" href="./assets/styles/bootstrap/bootstrap-grid.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./assets/styles/main.css">
 </head>
 
@@ -19,6 +19,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
+                <div class="header__humburger"><i class="icon-menu"></i></div>
                 <div class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -49,18 +50,22 @@
         <section class="section hero">
             <div class="hero__container">
                 <img src="./assets/images/logo.png" alt="Солнце" class="hero__logo">
+                <div class="hero__prev"></div>
+                <div class="hero__next"></div>
                 <div class="hero__slider">
-                    <div class="hero__slide">1</div>
-                    <div class="hero__slide">2</div>
-                    <div class="hero__slide">3</div>
-                    <div class="hero__slide">4</div>
-                    <div class="hero__slide">5</div>
+                    <div class="hero__slide"><img src="./assets/images/hero-slide.png" alt="" class="hero__img"></div>
+                    <div class="hero__slide"><img src="./assets/images/hero-slide.png" alt="" class="hero__img"></div>
+                    <div class="hero__slide"><img src="./assets/images/hero-slide.png" alt="" class="hero__img"></div>
+                    <div class="hero__slide"><img src="./assets/images/hero-slide.png" alt="" class="hero__img"></div>
+                    <div class="hero__slide"><img src="./assets/images/hero-slide.png" alt="" class="hero__img"></div>
                 </div>
             </div>
         </section>
         <section class="section popular">
             <div class="popular__container">
                 <h2 class="popular__title">Популярные блюда</h2>
+                <div class="popular__prev"></div>
+                <div class="popular__next"></div>
                 <div class="popular__list">
                     <div class="popular__item">
                         <img src="./assets/images/products/1.png" alt="" class="popular__img">
@@ -98,6 +103,15 @@
                         <p class="popular__price">1590 руб.</p>
                         <p class="popular__old-price">2900 руб.</p>
                     </div>
+                    <div class="popular__item">
+                            <img src="./assets/images/products/4.png" alt="" class="popular__img">
+                            <h3 class="popular__subtitle">Ассорти из свинины</h3>
+                            <p class="popular__weight">Вес: 1150 г.</p>
+                            <p class="popular__type">Шейка, балык, ребро</p>
+                            <p class="popular__text">Подаётся с соусом и маринованным луком</p>
+                            <p class="popular__price">1590 руб.</p>
+                            <p class="popular__old-price">2900 руб.</p>
+                        </div>
                 </div>
             </div>
         </section>

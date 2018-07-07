@@ -6,7 +6,7 @@
     justify-content: center;
 
     .footer__container {
-        width: 1170px;
+        max-width: 1170px;
         height: 100%;
         margin: 0 auto;
         padding-top: 113px;
@@ -14,6 +14,12 @@
         justify-content: space-around;
         align-items: center;
         color: white;
+
+        @include tablets() {
+            flex-direction: column;
+            padding-top: 50px;
+            align-items: flex-start;
+        }
     }
 
     .footer__vk {
@@ -39,6 +45,11 @@
     .menu__list {
         display: flex;
         list-style: none;
+        padding: 0;
+
+        @include tablets() {
+            flex-direction: column;
+        }
 
         .menu__item {
             margin-right: 20px;
@@ -63,6 +74,10 @@
         .delivery__phone {
             color: #ffe1ab;
             font-size: 25px;
+
+            @include tablets() {
+                font-size: 20px;
+            }
 
             &:hover {
                 color: white;

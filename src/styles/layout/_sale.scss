@@ -26,11 +26,19 @@
     padding: 40px;
     text-align: center;
 
+    @include tablets() {
+        padding: 10px;
+    }
+
     .sale__title {
         max-width: 500px;
         align-items: center;
         font-size: 40px;
         font-weight: 700;
+
+        @include tablets() {
+            font-size: 30px;
+        }
     }
 
     .sale__text {
