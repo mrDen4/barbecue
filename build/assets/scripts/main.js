@@ -1,4 +1,5 @@
 $(document).ready(() => {
+
     $('.header__humburger').on('click', function() {
         $('.header__nav').toggleClass('header__nav--active');
     });
@@ -8,11 +9,11 @@ $(document).ready(() => {
         console.log('click');
     });
 
-    // $('.products__item').on('click', function() {
-    //     $(this).closest('.products__item').toggleClass('products__item--active');
-    //     $(this).closest('.products__buy').toggleClass('products__buy--active');
-    //     console.log('click');
-    // });
+    $('.products__item').on('click', function() {
+        $(this).toggleClass('products__item--active');
+        $(this).find('.products__buy').toggleClass('products__buy--active');
+        console.log('click');
+    });
 
     // $('.products__item').on('click', function(){
     //     if ( $(this).next().is(":visible")){
