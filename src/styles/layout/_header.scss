@@ -142,14 +142,26 @@
         overflow: hidden;
         position: relative;
         padding: 20px;
+
+        @include tablets() {
+            padding: 0;
+        }
     }
 
     .modal__img {
         margin-right: 20px;
+
+        @include tablets() {
+            margin-right: 5px;
+        }
     }
 
     .modal__text {
         margin-right: 20px;
+        
+        @include tablets() {
+            margin-right: 5px;
+        }
 
         .modal__name {
             font-size: 20px;
