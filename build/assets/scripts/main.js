@@ -10,7 +10,7 @@ $(document).ready(() => {
         nextArrow: $('.popular__next'),
         responsive: [
             {
-              breakpoint: 700,
+              breakpoint: 800,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
