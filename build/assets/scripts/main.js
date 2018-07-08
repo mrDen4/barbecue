@@ -7,6 +7,22 @@ $(document).ready(() => {
         $('.header__modal').toggleClass('header__modal--active');
         console.log('click');
     });
+
+    // $('.products__item').on('click', function() {
+    //     $(this).closest('.products__item').toggleClass('products__item--active');
+    //     $(this).closest('.products__buy').toggleClass('products__buy--active');
+    //     console.log('click');
+    // });
+
+    // $('.products__item').on('click', function(){
+    //     if ( $(this).next().is(":visible")){
+    //     $(this).next().hide('slow');
+    //     }
+    //     else{
+    //     $('.team__link-more').hide('slow');
+    //     $(this).next().show('slow');
+    //     }
+    //     });
     
     $('.popular__list').slick({
         slidesToShow: 4,

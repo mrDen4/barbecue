@@ -66,6 +66,11 @@
     list-style: none;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    
+    .products__item--active {
+        background-color: #fef0d7;
+    }
 
     .products__item {
         display: flex;
@@ -113,6 +118,89 @@
             font-size: 15px;
             color: #a7a7a7;
             font-size: 15px;
+            text-decoration: line-through;
+        }
+
+        .products__buy {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+
+            .buy__text {
+                font-weight: bold;
+                margin: 0 0 10px 0;
+            }
+
+            .buy__souce {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .souce__item {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .item__text {
+                margin: 0;
+            }
+
+            .item__content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 84px;
+                height: 34px;
+                background: #ffffff;
+                margin-bottom: 30px;
+            }
+
+            .content__text {
+                padding: 0;
+                margin: 0;
+            }
+
+            .content__btn {
+                background: none;
+                border: none;
+            }
+
+            .buy__add {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .add__number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #ffe1ab;
+                max-width: 99px;
+                max-height: 52px;
+            }
+
+            .number__btn {
+                background: none;
+                border: none;
+            }
+
+            .number__count {
+                padding: 0;
+                margin: 0;
+            }
+
+            .add__btn {
+                color: white;
+                background-color: #8a3151;
+                height: 52px;
+                width: 165px;
+            }
+        }
+
+        .products__buy--active {
+            display: flex !important;
         }
     }
 }

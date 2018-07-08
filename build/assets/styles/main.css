@@ -402,7 +402,10 @@
   flex-wrap: wrap;
   list-style: none;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0; }
+  .products__list .products__item--active {
+    background-color: #fef0d7; }
   .products__list .products__item {
     display: flex;
     flex-direction: column;
@@ -433,7 +436,62 @@
     .products__list .products__item .products__old-price {
       font-size: 15px;
       color: #a7a7a7;
-      font-size: 15px; }
+      font-size: 15px;
+      text-decoration: line-through; }
+    .products__list .products__item .products__buy {
+      display: none;
+      flex-direction: column;
+      width: 100%; }
+      .products__list .products__item .products__buy .buy__text {
+        font-weight: bold;
+        margin: 0 0 10px 0; }
+      .products__list .products__item .products__buy .buy__souce {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+      .products__list .products__item .products__buy .souce__item {
+        display: flex;
+        flex-direction: column; }
+      .products__list .products__item .products__buy .item__text {
+        margin: 0; }
+      .products__list .products__item .products__buy .item__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 84px;
+        height: 34px;
+        background: #ffffff;
+        margin-bottom: 30px; }
+      .products__list .products__item .products__buy .content__text {
+        padding: 0;
+        margin: 0; }
+      .products__list .products__item .products__buy .content__btn {
+        background: none;
+        border: none; }
+      .products__list .products__item .products__buy .buy__add {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+      .products__list .products__item .products__buy .add__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffe1ab;
+        max-width: 99px;
+        max-height: 52px; }
+      .products__list .products__item .products__buy .number__btn {
+        background: none;
+        border: none; }
+      .products__list .products__item .products__buy .number__count {
+        padding: 0;
+        margin: 0; }
+      .products__list .products__item .products__buy .add__btn {
+        color: white;
+        background-color: #8a3151;
+        height: 52px;
+        width: 165px; }
+    .products__list .products__item .products__buy--active {
+      display: flex !important; }
 
 .pagination__list {
   display: flex;
