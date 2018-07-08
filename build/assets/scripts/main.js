@@ -2,6 +2,11 @@ $(document).ready(() => {
     $('.header__humburger').on('click', function() {
         $('.header__nav').toggleClass('header__nav--active');
     });
+
+    $('.order__btn').on('click', function() {
+        $('.header__modal').toggleClass('header__modal--active');
+        console.log('click');
+    });
     
     $('.popular__list').slick({
         slidesToShow: 4,

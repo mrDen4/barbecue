@@ -117,3 +117,108 @@
         color: #8a3151;
     }
 }
+
+.header__modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ffffff;
+    border: 1px solid #fdf0dd;
+    z-index: 999;
+    display: none;
+
+    .modal__list {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .modal__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fdf0dd;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        padding: 20px;
+    }
+
+    .modal__img {
+        margin-right: 20px;
+    }
+
+    .modal__text {
+        margin-right: 20px;
+
+        .modal__name {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .modal__about {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+
+    .modal__number {
+        display: flex;
+        margin-right: 40px;
+
+        .modal__btn {
+            background-color: #ffeab0;
+            opacity: 0.7;
+            border: none;
+        }
+
+        .modal__count {
+            background-color: #ffeab0;
+            opacity: 0.7;
+        }
+    }
+
+    .modal__price {
+        font-size: 23px;
+        font-weight: 700;
+        color: #8a3151;
+    }
+
+    .modal__delete {
+        transform: rotate(45deg);
+        font-size: 23px;
+        color: #8a3151;
+        background: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .modal__total {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .total__text {
+            font-size: 23px;
+            margin: 0 20px 0 0;
+        }
+
+        .total__price {
+            color: #8a3151;
+        }
+
+        .total__btn {
+            color: white;
+            background-color: #8a3151;
+            height: 52px;
+        }
+    }
+}
+
+.header__modal--active {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}

@@ -131,6 +131,79 @@
     text-decoration: none;
     color: #8a3151; }
 
+.header__modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  border: 1px solid #fdf0dd;
+  z-index: 999;
+  display: none; }
+  .header__modal .modal__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0; }
+  .header__modal .modal__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fdf0dd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px; }
+  .header__modal .modal__img {
+    margin-right: 20px; }
+  .header__modal .modal__text {
+    margin-right: 20px; }
+    .header__modal .modal__text .modal__name {
+      font-size: 20px;
+      margin: 0; }
+    .header__modal .modal__text .modal__about {
+      font-size: 16px;
+      margin: 0; }
+  .header__modal .modal__number {
+    display: flex;
+    margin-right: 40px; }
+    .header__modal .modal__number .modal__btn {
+      background-color: #ffeab0;
+      opacity: 0.7;
+      border: none; }
+    .header__modal .modal__number .modal__count {
+      background-color: #ffeab0;
+      opacity: 0.7; }
+  .header__modal .modal__price {
+    font-size: 23px;
+    font-weight: 700;
+    color: #8a3151; }
+  .header__modal .modal__delete {
+    transform: rotate(45deg);
+    font-size: 23px;
+    color: #8a3151;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .header__modal .modal__total {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .header__modal .modal__total .total__text {
+      font-size: 23px;
+      margin: 0 20px 0 0; }
+    .header__modal .modal__total .total__price {
+      color: #8a3151; }
+    .header__modal .modal__total .total__btn {
+      color: white;
+      background-color: #8a3151;
+      height: 52px; }
+
+.header__modal--active {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px; }
+
 .hero {
   width: 100vw;
   height: 90vh;
