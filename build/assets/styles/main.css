@@ -350,7 +350,8 @@
     .popular__list .popular__item .popular__old-price {
       font-size: 15px;
       color: #a7a7a7;
-      font-size: 15px; }
+      font-size: 15px;
+      text-decoration: line-through; }
 
 .catalog .catalog__container {
   max-width: 1170px;
