@@ -47,6 +47,9 @@
   content: '\f0c9'; }
 
 /* '' */
+.wrapper {
+  overflow-x: hidden; }
+
 .header .header__container {
   min-height: 70px;
   padding: 20px 0;
@@ -217,15 +220,21 @@
   width: 100vw;
   height: 90vh;
   background: #8a3151; }
-  .hero .hero__container {
-    max-width: 1170px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative; }
+
+.hero--product {
+  width: 100vw;
+  height: 350px;
+  background: #8a3151; }
+
+.hero__container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
 
 .hero__logo {
   margin-bottom: 35px; }
@@ -593,6 +602,143 @@
     margin-top: 50px;
     color: white;
     opacity: .5; }
+
+.catalog__menu--product {
+  background-color: none;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .catalog__menu--product .menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 740px;
+    list-style: none;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 800px) {
+      .catalog__menu--product .menu__list {
+        padding: 30px 10px; } }
+  .catalog__menu--product .menu__item {
+    margin-right: 20px;
+    border-bottom: 1px dotted #ffe1ab;
+    margin-bottom: 15px; }
+    .catalog__menu--product .menu__item .menu__link {
+      color: white;
+      text-decoration: none; }
+      .catalog__menu--product .menu__item .menu__link:hover {
+        color: #ffe1ab; }
+    .catalog__menu--product .menu__item:hover {
+      border-bottom: 1px dotted #ffe1ab; }
+
+.product {
+  background-color: #fffcf8;
+  padding-top: 80px; }
+
+.product__container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.product__cd {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  width: 100%; }
+
+.cd__imgs {
+  margin-right: 50px; }
+
+.imgs__large {
+  display: flex;
+  flex-direction: column; }
+  .imgs__large .imgs__small {
+    display: flex; }
+
+.cd__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .cd__content .content__title {
+    margin-bottom: 35px; }
+  .cd__content .content__complect {
+    margin-bottom: 40px; }
+
+.content__change {
+  display: flex;
+  margin-bottom: 90px;
+  align-items: center; }
+  .content__change .change__text {
+    margin-right: 20px;
+    font-weight: bold; }
+  .content__change .change__souce {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; }
+    .content__change .change__souce .souce__btns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fff0c8; }
+      .content__change .change__souce .souce__btns .btns__btn {
+        border: none; }
+      .content__change .change__souce .souce__btns .btns__number {
+        margin: 0;
+        padding: 0; }
+
+.content__price {
+  color: #8a3151;
+  font-size: 40px; }
+
+.content__number {
+  display: flex; }
+  .content__number .number__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff0c8; }
+    .content__number .number__btns .btns__btn {
+      border: none;
+      background: #fff0c8; }
+    .content__number .number__btns .btns__number {
+      margin: 0;
+      padding: 0; }
+  .content__number .number__btn {
+    background-color: #8a3151;
+    width: 183px;
+    height: 51px;
+    margin-left: 10px;
+    color: white; }
+
+.product__about {
+  margin-top: 70px;
+  max-width: 980px; }
+
+.popular--another {
+  padding-bottom: 100px;
+  background-color: #fffcf8; }
+  .popular--another .popular__container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    @media screen and (max-width: 800px) {
+      .popular--another .popular__container {
+        padding: 0 20px; } }
+  .popular--another .popular__title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    width: 100%; }
 
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)

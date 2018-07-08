@@ -2,6 +2,7 @@
 @import "./config/media";
 @import "./config/variables";
 @import "./config/fontello";
+@import "./config/base";
 
 //layout
 @import "./layout/header";
@@ -11,6 +12,9 @@
 @import "./layout/sale";
 @import "./layout/callback";
 @import "./layout/footer";
+
+//product
+@import "./layout/product";
 
 // Bootstrap
 @import "./bootstrap/bootstrap";
