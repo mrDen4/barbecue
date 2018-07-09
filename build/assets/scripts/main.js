@@ -15,16 +15,6 @@ $(document).ready(() => {
         console.log('click');
     });
 
-    // $('.products__item').on('click', function(){
-    //     if ( $(this).next().is(":visible")){
-    //     $(this).next().hide('slow');
-    //     }
-    //     else{
-    //     $('.team__link-more').hide('slow');
-    //     $(this).next().show('slow');
-    //     }
-    //     });
-    
     $('.popular__list').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -54,4 +44,13 @@ $(document).ready(() => {
         prevArrow: $('.hero__prev'),
         nextArrow: $('.hero__next')
     });
+
+    $('.recommendation__slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        prevArrow: $('.slider__prev'),
+        nextArrow: $('.slider__next')
+    });
+
+    
 });

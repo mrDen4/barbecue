@@ -47,9 +47,6 @@
   content: '\f0c9'; }
 
 /* '' */
-.wrapper {
-  overflow-x: hidden; }
-
 .header .header__container {
   min-height: 70px;
   padding: 20px 0;
@@ -819,6 +816,155 @@
     margin-bottom: 40px;
     font-size: 40px;
     width: 100%; }
+
+.payment {
+  padding: 70px 0 70px 0;
+  background-color: #fef9f1; }
+  .payment .payment__container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .payment .payment__title {
+    font-size: 40px;
+    font-weight: 700; }
+  .payment .payment__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .payment .payment__list .payment__item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      margin-bottom: 30px;
+      position: relative;
+      padding-right: 70px; }
+      .payment .payment__list .payment__item:last-child {
+        margin-bottom: 0; }
+    .payment .payment__list .item__img {
+      width: 199px;
+      height: 131px; }
+    .payment .payment__list .item__title {
+      font-size: 23px;
+      font-weight: 400; }
+    .payment .payment__list .item__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffeab0;
+      min-height: 50px; }
+    .payment .payment__list .number__count {
+      margin: 0; }
+    .payment .payment__list .number__btn {
+      background: none;
+      border: none;
+      padding: 0 20px; }
+    .payment .payment__list .item__info {
+      display: flex;
+      align-items: center; }
+    .payment .payment__list .info__subtitle {
+      font-weight: bold;
+      margin-right: 15px; }
+    .payment .payment__list .info__souce {
+      display: flex;
+      flex-direction: column; }
+    .payment .payment__list .item__price {
+      color: #8a3151;
+      font-size: 23px;
+      font-weight: 700; }
+    .payment .payment__list .item__delete {
+      transform: rotate(45deg);
+      color: #8a3151;
+      font-size: 23px;
+      background: none;
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+.recommendation {
+  background-color: #fef9f1; }
+  .recommendation .recommendation__container {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  .recommendation .recommendation__title {
+    font-size: 30px;
+    margin-bottom: 35px; }
+  .recommendation .slider__prev {
+    background: url("../images/arrow/left.png") center center no-repeat;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    left: -40px; }
+    @media screen and (max-width: 800px) {
+      .recommendation .slider__prev {
+        left: 5px;
+        top: 350px; } }
+  .recommendation .slider__next {
+    background: url("../images/arrow/right.png") center center no-repeat;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    right: -40px; }
+    @media screen and (max-width: 800px) {
+      .recommendation .slider__next {
+        right: 5px;
+        top: 350px; } }
+  .recommendation .recommendation__slider {
+    display: flex;
+    width: 100%; }
+    .recommendation .recommendation__slider .slider__slide {
+      max-width: 185px;
+      height: 233px;
+      border: 1px solid #f4ece0;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px; }
+    .recommendation .recommendation__slider .slide__title {
+      font-size: 20px; }
+    .recommendation .recommendation__slider .slide__price {
+      color: #8a3151;
+      font-size: 23px; }
+  .recommendation .recommendation__order {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    max-height: 50px; }
+    .recommendation .recommendation__order .order__delete {
+      background: #ffffff;
+      border: none;
+      margin-right: auto;
+      padding: 0 20px; }
+    .recommendation .recommendation__order .order__text {
+      font-size: 23px;
+      font-weight: 400; }
+      .recommendation .recommendation__order .order__text .order__price {
+        height: 28px;
+        color: #8a3151; }
+    .recommendation .recommendation__order .order__promo {
+      border: 1px solid #ffcc6f;
+      background: #ffffff;
+      padding: 20px;
+      margin: 0 20px 0 30px; }
+    .recommendation .recommendation__order .order__submit {
+      color: white;
+      background: #8a3151;
+      border: none; }
 
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
