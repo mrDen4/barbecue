@@ -49,7 +49,23 @@ $(document).ready(() => {
         slidesToShow: 6,
         slidesToScroll: 1,
         prevArrow: $('.slider__prev'),
-        nextArrow: $('.slider__next')
+        nextArrow: $('.slider__next'),
+        responsive: [
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
 
     
