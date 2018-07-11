@@ -13,6 +13,10 @@ $(document).ready(() => {
         $(this).find('.products__buy').toggleClass('products__buy--active');
     });
 
+    $('.contacts__btn').on('click', function() {
+        $('.header__call').toggleClass('header__call--active');
+    });
+
     //Корзина
     $('.add__btn').on('click', function() {
         var items = [
