@@ -56,21 +56,24 @@
     width: 100%;
 
     @include tablets() {
-        width: 300px;
+        width: 90%;
     }
 
     .popular__item {
-        display: flex !important;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         border: 1px solid #ffcc6f;
         text-align: center;
         margin-right: 10px;
+        
+        @include tablets() {
+            width: 100%;
+        }
 
         .popular__img {
-            width: 268px;
-            height: 180px;
-            z-index: 999;
+            max-width: 100%;
         }
 
         .popular__subtitle {
@@ -86,6 +89,7 @@
         }
 
         .popular__text {
+            text-align: center;
             color: #a0a0a0;
             max-width: 170px;
         }

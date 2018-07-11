@@ -145,6 +145,7 @@
 
         @include tablets() {
             padding: 0;
+            flex-direction: column;
         }
     }
 
@@ -160,7 +161,7 @@
         margin-right: 20px;
         
         @include tablets() {
-            margin-right: 5px;
+            margin-right: 0px;
         }
 
         .modal__name {
@@ -177,6 +178,10 @@
     .modal__number {
         display: flex;
         margin-right: 40px;
+
+        @include tablets() {
+            margin-right: 0;
+        }
 
         .modal__btn {
             background-color: #ffeab0;
