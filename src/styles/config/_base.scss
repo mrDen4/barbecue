@@ -1,3 +1,27 @@
 .wrapper {
+    width: 100%;
+    height: 100%;
     overflow-x: hidden;
+    position: relative;
 }
+
+.bg-basket {
+    background: #000;
+    opacity: .5;
+    width: 9999px;
+    height: 9999px;
+    position: absolute;
+    z-index: 199;
+    display: none;
+}
+
+.bg-call {
+    background: #000;
+    opacity: .5;
+    width: 9999px;
+    height: 9999px;
+    position: absolute;
+    z-index: 199;
+    display: none;
+}
+

@@ -4,16 +4,38 @@ $(document).ready(() => {
         $('.header__nav').toggleClass('header__nav--active');
     });
 
+    //Корзина
     $('.order__btn').on('click', function() {
         $('.header__modal').toggleClass('header__modal--active');
-        console.log('click');
+        $('.bg-basket').css('display', 'initial');
     });
 
+    $('.bg-basket').on('click', function() {
+        $('.header__modal').toggleClass('header__modal--active');
+        $('.bg-basket').css('display', 'none');
+    });
+
+    //карточка товара
     $('.products__item').on('click', function() {
         $(this).toggleClass('products__item--active');
         $(this).find('.products__buy').toggleClass('products__buy--active');
-        console.log('click');
     });
+
+    //Заказать звонок
+    $('.contacts__btn').on('click', function() {
+        $('.header__call').toggleClass('header__call--active');
+        $('.bg-call').css('display', 'initial');
+    });
+
+    $('.call__ext').on('click', function() {
+        $('.header__call').toggleClass('header__call--active');
+        $('.bg-call').css('display', 'none');
+    })
+
+    $('.bg-call').on('click', function() {
+        $('.header__call').toggleClass('header__call--active');
+        $('.bg-call').css('display', 'none');
+    })
 
     $('.popular__list').slick({
         slidesToShow: 4,
@@ -66,7 +88,5 @@ $(document).ready(() => {
               }
             }
         ]
-    });
-
-    
+    });    
 });
