@@ -27,9 +27,10 @@ $(document).ready(() => {
             }
         ];
         items.push({
-            itemid: $(this).dataset.id,
-            price: $(this).dataset.price,
-            name: $(this).dataset.name
+            itemid: this.dataset.itemid,
+            price: this.dataset.price,
+            name: this.dataset.name,
+            count: this.dataset.count
         });
         var serialItems = JSON.stringify(items);
         localStorage.setItem("myItem", serialItems);
