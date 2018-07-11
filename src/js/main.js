@@ -6,13 +6,31 @@ $(document).ready(() => {
 
     $('.order__btn').on('click', function() {
         $('.header__modal').toggleClass('header__modal--active');
-        console.log('click');
     });
 
     $('.products__item').on('click', function() {
         $(this).toggleClass('products__item--active');
         $(this).find('.products__buy').toggleClass('products__buy--active');
-        console.log('click');
+    });
+
+    //Корзина
+    $('.add__btn').on('click', function() {
+        var items = [
+            {
+                itemid: 1,
+                price: 1900,
+                name: 'Булка'
+            }
+        ];
+        items.push({
+            itemid: $(this).dataset.id,
+            price: $(this).dataset.price,
+            name: $(this).dataset.name
+        });
+        var serialItems = JSON.stringify(items);
+        localStorage.setItem("myItem", serialItems);
+        var returnItems = JSON.parse(localStorage.getItem("myItem"));
+        console.log(returnItems);
     });
 
     $('.popular__list').slick({
@@ -66,7 +84,5 @@ $(document).ready(() => {
               }
             }
         ]
-    });
-
-    
+    });    
 });
