@@ -1088,6 +1088,74 @@
       height: 52px;
       margin-top: 20px; }
 
+.ordering {
+  margin-top: 70px; }
+  .ordering .ordering__container {
+    max-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.ordering__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px; }
+  .ordering__form .form__row {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (max-width: 800px) {
+      .ordering__form .form__row {
+        flex-direction: column; } }
+    .ordering__form .form__row .row__inp {
+      margin-right: 20px;
+      border: #fff0c8 1px solid;
+      width: 50%;
+      padding: 10px; }
+      @media screen and (max-width: 800px) {
+        .ordering__form .form__row .row__inp {
+          width: 90%;
+          margin: 0;
+          margin-bottom: 20px; } }
+      .ordering__form .form__row .row__inp:last-child {
+        margin-right: 0; }
+    .ordering__form .form__row .row__inp-s {
+      width: 25%;
+      border: #fff0c8 1px solid;
+      margin-right: 20px;
+      padding: 10px; }
+      @media screen and (max-width: 800px) {
+        .ordering__form .form__row .row__inp-s {
+          width: 90%;
+          margin: 0;
+          margin-bottom: 20px; } }
+      .ordering__form .form__row .row__inp-s:last-child {
+        margin-right: 0; }
+    .ordering__form .form__row .row__text {
+      width: 100%;
+      border: #fff0c8 1px solid;
+      padding: 10px; }
+      @media screen and (max-width: 800px) {
+        .ordering__form .form__row .row__text {
+          width: 90%; } }
+    .ordering__form .form__row .row__btn {
+      background-color: #8a3151;
+      height: 52px;
+      width: 242px;
+      color: white;
+      margin-left: 30px; }
+    .ordering__form .form__row .content__sum {
+      font-size: 23px; }
+    .ordering__form .form__row .content__price {
+      color: #8a3151;
+      font-weight: bold; }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
