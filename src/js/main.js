@@ -16,9 +16,9 @@ $(document).ready(() => {
     });
 
     //карточка товара
-    $('.products__item').on('click', function() {
-        $(this).toggleClass('products__item--active');
-        $(this).find('.products__buy').toggleClass('products__buy--active');
+    $('.products__item').on('click', function(event) {
+        $(event.target).toggleClass('products__item--active');
+        $(event.target).find('.products__buy').toggleClass('products__buy--active');
     });
 
     //Заказать звонок
