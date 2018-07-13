@@ -314,6 +314,7 @@
   position: relative; }
 
 .hero__logo {
+  margin-top: 30px;
   margin-bottom: 35px; }
   @media screen and (max-width: 800px) {
     .hero__logo {
@@ -326,7 +327,6 @@
   height: 40px;
   position: absolute;
   left: -40px;
-  top: 500px;
   z-index: 999; }
   @media screen and (max-width: 800px) {
     .hero__prev {
@@ -342,7 +342,6 @@
   width: 20px;
   height: 40px;
   position: absolute;
-  top: 500px;
   right: -40px;
   z-index: 999; }
   @media screen and (max-width: 800px) {
@@ -607,6 +606,7 @@
         padding: 0;
         margin: 0; }
       .products__list .products__item .products__buy .content__btn {
+        padding: 5px 10px;
         background: none;
         border: none; }
       .products__list .products__item .products__buy .buy__add {
@@ -621,11 +621,12 @@
         max-width: 99px;
         max-height: 52px; }
       .products__list .products__item .products__buy .number__btn {
+        padding: 10px;
         background: none;
         border: none; }
       .products__list .products__item .products__buy .number__count {
         padding: 0;
-        margin: 0; }
+        margin: 0 5px 0 0; }
       .products__list .products__item .products__buy .add__btn {
         color: white;
         background-color: #8a3151;
@@ -915,6 +916,7 @@
       align-items: center;
       border: 1px solid #fff0c8; }
       .content__change .change__souce .souce__btns .btns__btn {
+        padding: 5px 10px;
         border: none;
         background: none; }
       .content__change .change__souce .souce__btns .btns__number {
@@ -933,6 +935,7 @@
     align-items: center;
     background: #fff0c8; }
     .content__number .number__btns .btns__btn {
+      padding: 5px 10px;
       border: none;
       background: #fff0c8; }
     .content__number .number__btns .btns__number {
@@ -1104,6 +1107,11 @@
     .recommendation .recommendation__slider .slide__price {
       color: #8a3151;
       font-size: 23px; }
+    .recommendation .recommendation__slider .slide__btn {
+      background: #8a3151;
+      color: white;
+      border: none;
+      padding: 5px 10px; }
   .recommendation .recommendation__order {
     display: flex;
     justify-content: space-between;

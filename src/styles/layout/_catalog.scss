@@ -178,6 +178,7 @@
             }
 
             .content__btn {
+                padding: 5px 10px;
                 background: none;
                 border: none;
             }
@@ -198,13 +199,14 @@
             }
 
             .number__btn {
+                padding: 10px;
                 background: none;
                 border: none;
             }
 
             .number__count {
                 padding: 0;
-                margin: 0;
+                margin: 0 5px 0 0;
             }
 
             .add__btn {
