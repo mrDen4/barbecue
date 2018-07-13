@@ -78,7 +78,7 @@
 
     @include tablets() {
         width: 95%;
-        height: 200px;
+        max-height: 200px;
     }
 }
 
