@@ -717,6 +717,7 @@
         .callback .callback__form .form__inp {
           margin-bottom: 20px; } }
     .callback .callback__form .form__btn {
+      border: none;
       width: 194px;
       height: 52px;
       background-color: #ffe1ab; }
@@ -1124,8 +1125,7 @@
       background: #8a3151;
       border: none;
       width: 242px;
-      height: 52px;
-      margin-top: 20px; }
+      height: 52px; }
 
 .ordering {
   margin-top: 70px; }
