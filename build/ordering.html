@@ -15,9 +15,12 @@
 
 <body>
     <div class="wrapper">
+        <div class="bg-order"></div>
         <header class="header">
             <div class="header__container">
-                <div class="header__humburger"><i class="icon-menu"></i></div>
+                <div class="header__humburger">
+                    <i class="icon-menu"></i>
+                </div>
                 <div class="header__nav">
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -39,8 +42,7 @@
                     <img src="./assets/images/icons/vk.png" alt="vk" class="order__img">
                     <a href="#" class="order__contact"> vk.com/dostavkasolnce </a>
                     <button class="order__btn">
-                        <img src="./assets/images/icons/bag.png" alt="vk" class="order__img">
-                        Ваш заказ |0|
+                        <img src="./assets/images/icons/bag.png" alt="vk" class="order__img"> Ваш заказ |0|
                     </button>
                 </div>
                 <div class="header__call">
@@ -91,7 +93,9 @@
                         </li>
                     </ul>
                     <div class="modal__total">
-                        <p class="total__text">2 товара на сумму: <span class="total__price">1680 руб.</span> </p>
+                        <p class="total__text">2 товара на сумму:
+                            <span class="total__price">1680 руб.</span>
+                        </p>
                         <button class="total__btn">Оформить заказ</button>
                     </div>
                 </div>
@@ -159,12 +163,30 @@
                     </div>
                     <div class="form__row">
                         <div class="row__content">
-                            <p class="content__sum">Итого:  <span class="content__price">1512 руб.</span> </p>
+                            <p class="content__sum">Итого:
+                                <span class="content__price">1512 руб.</span>
+                            </p>
                             <p class="content__promo">С учетом промокода</p>
                         </div>
-                        <button class="row__btn">Подтвердить заказ</button>
-                    </div>    
+                        <button type="submit" class="row__btn">Подтвердить заказ</button>
+                    </div>
                 </form>
+                <div class="ordering__popup">
+                    <p class="popup__ok">&#10003;</p>
+                    <h1 class="popup__title">Спасибо за выбор ароматной доставки "Солнце"</h1>
+                    <p class="popup__text">В ближайшее время с вами свяжется администратор для подтверждения заказа.</p>
+                    <div class="popup__callback">
+                        <p class="callback__text">
+                            А пока вы можете подписаться на горячие предложения, акции и розыгрыши
+                        </p>
+                        <form class="callback__form">
+                            <input type="text" class="form__inp" placeholder="E-mail">
+                            <button class="form__btn">Подписаться</button>
+                        </form>
+                    </div>
+                    <p class="popup__end">Также вступайте в нашу <a href="#">группу в VK</a></p>
+                    <p class="popup__end">там тоже много интерессного! ;)</p>
+                </div>
             </div>
         </section>
         <section class="section callback">
@@ -186,10 +208,18 @@
                 </div>
                 <div class="footer__menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Интересное</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Оплата и доставка</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Интересное</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Каталог</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer__delivery">

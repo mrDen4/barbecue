@@ -37,6 +37,20 @@ $(document).ready(() => {
         $('.bg-call').css('display', 'none');
     })
 
+    //Попап оформления заказа
+    $('.row__btn').on('click', function(e) {
+        e.preventDefault();
+        $('.ordering__popup').css('display', 'flex');
+        $('.bg-order').css('display', 'initial');
+    });
+
+    $('.bg-order').on('click', function(e) {
+        e.preventDefault();
+        $('.ordering__popup').css('display', 'none');
+        $('.bg-order').css('display', 'none');
+    })
+
+
     $('.popular__list').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
