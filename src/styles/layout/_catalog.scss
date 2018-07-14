@@ -79,6 +79,7 @@
         justify-content: flex-start;
         border: 1px solid #ffcc6f;
         text-align: center;
+        overflow: hidden;
         max-width: 270px;  
         min-height: 550px;   
         margin-right: 10px;
@@ -177,6 +178,7 @@
             }
 
             .content__btn {
+                padding: 5px 10px;
                 background: none;
                 border: none;
             }
@@ -197,13 +199,14 @@
             }
 
             .number__btn {
+                padding: 10px;
                 background: none;
                 border: none;
             }
 
             .number__count {
                 padding: 0;
-                margin: 0;
+                margin: 0 5px 0 0;
             }
 
             .add__btn {

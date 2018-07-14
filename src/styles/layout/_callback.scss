@@ -16,6 +16,7 @@
             flex-direction: column;
             justify-content: space-around;
             height: 400px;
+            text-align: center;
         }
     }
 
@@ -44,6 +45,7 @@
         }
 
         .form__btn {
+            border: none;
             width: 194px;
             height: 52px;
             background-color: #ffe1ab;
