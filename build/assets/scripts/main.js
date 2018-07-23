@@ -102,5 +102,12 @@ $(document).ready(() => {
               }
             }
         ]
-    });    
+    });
+    
+    $('.about__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.slider__arrow-left'),
+        nextArrow: $('.slider__arrow-right')
+    });
 });
