@@ -930,8 +930,17 @@
 .about .about__list {
   list-style: decimal; }
 
+.about .about__item {
+  color: #8a3151; }
+
+.about .item__text {
+  color: black; }
+
 .about .about__imgs {
   margin: 20px 0; }
+
+.about .text__color {
+  color: #8a3151; }
 
 .about .about__video {
   width: 100%;
