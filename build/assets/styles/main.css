@@ -950,6 +950,83 @@
     .about .about__video {
       height: 200px; } }
 
+.articles .articles__container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.articles .articles__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.articles .items__large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .articles .items__large .large__img {
+    height: 50%;
+    width: 100%; }
+  .articles .items__large .large__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .articles .items__large .content__title {
+    font-size: 30px;
+    font-weight: 400; }
+  .articles .items__large .content__link {
+    color: black;
+    border-bottom: 1px dotted #8a3151;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .articles .items__large .content__link .link__img {
+      width: 5px;
+      height: 10px; }
+
+.articles .items__small {
+  width: 50%; }
+  .articles .items__small .small__list {
+    display: flex;
+    flex-wrap: wrap; }
+  .articles .items__small .small__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    margin-right: 20px; }
+    .articles .items__small .small__item .item__img {
+      width: 100%;
+      height: 200px; }
+      .articles .items__small .small__item .item__img .img__img {
+        width: 100%;
+        height: 100%; }
+    .articles .items__small .small__item .item__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .articles .items__small .small__item .item__content .content__title {
+        font-size: 23px;
+        font-weight: 400; }
+      .articles .items__small .small__item .item__content .content__link {
+        color: black;
+        border-bottom: 1px dotted #8a3151;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .articles .items__small .small__item .item__content .content__link .link__img {
+          width: 5px;
+          height: 10px; }
+
 .catalog__menu--product {
   background-color: none;
   width: 100vw;
